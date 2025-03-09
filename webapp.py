@@ -357,24 +357,7 @@ def main():
                     - Real-time Learning System
                     """)
 
-    # Documentation
-    with st.expander("ℹ️ About FederiMed LLM"):
-        st.markdown("""
-            ### How FederiMed Works
-            
-            FederiMed uses federated learning to:
-            - 🔒 Preserve patient privacy
-            - 🌐 Learn from global medical data
-            - 📈 Continuously improve
-            - 🏥 Connect healthcare providers
-            
-            ### Important Notice
-            This is a demonstration system. Always consult with qualified healthcare providers for medical decisions.
-            
-            ### Version Info
-            - Beta Release 1.0
-            - Last Updated: 2024
-        """)
+
 
 if __name__ == "__main__":
     main()
