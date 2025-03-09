@@ -1,4 +1,4 @@
-# Federimed: Overview
+# FederiMed: Overview
 
 Built in the European Builders League: Milan Hackathon on the 8th and 9th of March 2025, **Federimed** is a conceptual platform for centralized federated learning in healthcare. It enables hospitals worldwide to collaboratively train a machine learning model without sharing sensitive patient data. Doctors can interact with an LLM to access insights from anonymized patient data, such as similar symptoms, diagnoses, and treatments, helping improve decision-making and patient care.
 
