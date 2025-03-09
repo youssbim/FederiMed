@@ -5,6 +5,8 @@
 ### The Problem
 Imagine you visit your primary care doctor with a set of symptoms they've never encountered before. Their response may be to suggest a slow-paced treatment plan with some medications, which could just delay the underlying issue. Meanwhile, other doctors around the world may have encountered similar cases and already issued successful treatments. Unfortunately, this valuable information remains isolated in each hospital's database.
 
+If you're lucky enough to be alive after that initial treatment plan, you’ll return to primary care again. This time, however, your doctor could give you a better treatment plan based on what has worked for other patients with similar symptoms or patient histories, thanks to the insights gathered from doctors worldwide.
+
 ### Our Solution
 **FederiMed** solves this problem by connecting doctors globally and creating a centralized federated learning model. We extract and aggregate anonymized data from hospitals and use it to fine-tune a global Large Language Model (LLM). 
 
@@ -17,5 +19,10 @@ Imagine you visit your primary care doctor with a set of symptoms they've never 
 2. Instead of sharing raw data, hospitals share only the model weights to the global server.
 3. The global server aggregates the updates, improving the global model with insights from all participating hospitals.
 4. Doctors can access the global model to query for insights, such as treatments for specific symptoms or conditions.
+
+### Current Demo
+- **Synthetic Data**: We generated synthetic patient data using [Synthea](https://github.com/synthetichealth/synthea), simulating 100 patients.
+- **Federated Learning Framework**: We used [**FLWR**](https://github.com/adap/flower) in Python for federated learning.
+- **Current Status**: The code currently works for 1 client/2 clients, demonstrating a small-scale version of the platform.
 
 This system enables doctors to leverage the collective knowledge of healthcare professionals worldwide, helping them provide better, data-driven treatments for their patients.
