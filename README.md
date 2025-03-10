@@ -8,19 +8,18 @@ When you visit your primary care doctor with unique symptoms, they might suggest
 If you're fortunate enough to survive the initial treatment, you might return to primary care with new insights. This time, however, your doctor could offer a more effective treatment plan based on what has worked for other patients with similar symptoms or medical histories, thanks to the knowledge shared globally through **FederiMed**.
 
 ### Our Solution
-**FederiMed** focuses on actionable clinical insights by connecting doctors globally and creating a centralized federated learning model. We extract and aggregate anonymized data from hospitals and use it to fine-tune a global Large Language Model (LLM) for enhanced decision-making.
+Federated Learning (FL) allows AI models to learn from decentralized medical data without exposing patient records. Instead of transferring raw data, each hospital trains a local AI model, keeping patient information secure.
 
-- **Federated Learning**: Instead of sharing sensitive patient data, local models are trained at hospitals, and only the model weights are sent to the global server. This preserves patient privacy while enabling cross-institutional collaboration to improve the global model.
-  
-- **Privacy-Preserving**: Using federated fine-tuning, patient data remains securely within each hospital, ensuring compliance with privacy laws like HIPAA and GDPR while mitigating the risk of data breaches.
+By combining FL with Fine-Tuned Large Language Models (LLMs), we enable a global AI system to improve continuously from real-world cases while ensuring data privacy.
 
-### The Process
-1. Doctors across hospitals train local models using their anonymized patient data.
-2. Instead of sharing raw data, hospitals share only model weights with the global server.
-3. The global server aggregates updates from hospitals and fine-tunes the global model, incorporating a wide variety of clinical scenarios.
-4. Doctors can then query the global model for actionable insights, such as tailored treatment plans based on similar patient histories and symptoms.
+## How It Works
+Local Training:  Each health institution trains its own model on anonymized patient data.
+Model Weight Sharing: Only model updates, not raw data, are sent to a global server.
+Global Aggregation: A central system refines a shared LLM by integrating insights from multiple hospitals.
+Privacy Preservation: Patient records never leave the hospital, ensuring compliance with HIPAA and GDPR.
+Smarter AI Assistance: Doctors can query the federated fine-tuned LLM for personalized, evidence-based treatment recommendations.
 
-### Current Demo
+### Current Demo (Proof of Concept)
 - **Synthetic Data**: We generated synthetic patient data using [Synthea](https://github.com/synthetichealth/synthea), simulating 100 patients to test the system.
 - **Federated Learning Framework**: We employed [**FLWR**](https://github.com/adap/flower), a Python-based federated learning framework, to facilitate the collaboration and model training.
 - **Current Status**: The platform is currently operational with a demo setup supporting 1-2 clients, showcasing the potential of federated learning in healthcare.
