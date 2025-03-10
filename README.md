@@ -1,5 +1,7 @@
 # FederiMed: Overview
 
+![FederiMed Demo](https://github.com/youssbim/FederiMed/blob/main/shortdemo.gif?raw=true)
+
 ### The Problem
 When you visit your primary care doctor with unique symptoms, they might suggest a conservative treatment plan with medications, but this could only delay the underlying condition. Meanwhile, other doctors around the world may have encountered similar cases and provided effective treatments. Unfortunately, this valuable clinical knowledge is stored in each hospital's database, sometimes in individual patient files, making it difficult for doctors to benefit from the collective insights of their global peers.
 
